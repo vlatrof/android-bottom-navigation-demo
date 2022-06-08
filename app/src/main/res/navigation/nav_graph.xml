@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menu_item_feed">
+
+    <!-- ID's of fragments here equals ID's of res/menu/bottom_menu items-->
+
+    <fragment
+        android:id="@+id/menu_item_favourites"
+        android:name="com.example.androidbottomnavigationbardemo.screens.FavouritesFragment"
+        android:label="fragment_favourites"
+        tools:layout="@layout/fragment_feed" />
+    <fragment
+        android:id="@+id/menu_item_feed"
+        android:name="com.example.androidbottomnavigationbardemo.screens.FeedFragment"
+        android:label="fragment_feed"
+        tools:layout="@layout/fragment_favourites" />
+    <fragment
+        android:id="@+id/menu_item_settings"
+        android:name="com.example.androidbottomnavigationbardemo.screens.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>
